@@ -1,0 +1,75 @@
+/* Navbar container */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #161b22; /* Dark GitHub-like background */
+  border-bottom: 2px solid #ffffff33; /* subtle bottom border */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* slight shadow */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo section */
+nav > a > div {
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+nav h3 {
+  margin-left: 12px;
+  color: #f1f6fd;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* Links section */
+nav > div {
+  display: flex;
+  align-items: center;
+}
+
+nav p {
+  margin-left: 30px;
+  font-weight: 600;
+  color: #f1f6fd;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover effect */
+nav h3:hover,
+nav p:hover {
+  text-decoration: underline;
+  color: #58a6ff; /* subtle blue hover like GitHub */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+
+  nav > div {
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  nav p {
+    margin-left: 0;
+    margin-right: 15px;
+    margin-bottom: 5px;
+  }
+}

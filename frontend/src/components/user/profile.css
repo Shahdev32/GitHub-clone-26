@@ -1,0 +1,113 @@
+/* Center the entire profile page */
+.profile-page-container {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: flex-start; /* vertical alignment from top */
+  min-height: 100vh; /* full viewport height */
+  background-color: #0c1116;
+  padding-top: 50px;
+}
+
+/* Wrapper for profile + heatmap */
+.profile-page-wrapper {
+  display: flex;
+  gap: 40px;
+  max-width: 1000px;
+  width: 90%;
+}
+
+/* User Profile Section */
+.user-profile-section {
+  flex: 1;
+  background-color: #161b22;
+  padding: 30px 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Profile Image */
+.profile-image {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 15px auto;
+  border-radius: 50%;
+  background-color: grey;
+}
+
+/* User Name */
+.name h3 {
+  color: #f1f6fd;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Follow Button */
+.follow-btn {
+  background-color: #238636;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.follow-btn:hover {
+  background-color: #2ea043;
+}
+
+/* Followers */
+.follower {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 0.95rem;
+  color: #c9d1d9;
+}
+
+/* HeatMap Section */
+.heat-map-section {
+  flex: 2;
+  background-color: #161b22;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.heat-map-section h4 {
+  margin-bottom: 15px;
+  color: #f1f6fd;
+}
+
+/* Logout Button */
+#logout {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-color: #ff4d6d;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#logout:hover {
+  border: 1px solid white;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .profile-page-wrapper {
+    flex-direction: column;
+    width: 95%;
+    align-items: center;
+  }
+
+  .heat-map-section,
+  .user-profile-section {
+    width: 100%;
+  }
+}
